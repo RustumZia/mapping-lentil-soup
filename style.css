@@ -1,0 +1,50 @@
+body {
+    background-color: hsl(28 100% 92%);
+}
+
+#lentil-soup {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    grid-area: X;
+    border-width: 5px;
+    border-color: hsl(28 100% 33%);
+    border-style: solid;
+}
+
+#cumin-seed {
+    width: 200px;
+    grid-area: c;
+}
+
+#onion {
+    width: 200px;
+    grid-area: o;
+}
+
+#rice {
+    width: 200px;
+    grid-area: r;
+}
+
+#salt {
+    width: 200px;
+    grid-area: s;
+}
+
+#lentils {
+    width: 200px;
+    grid-area: l;
+}
+
+#grid {
+    display: grid;
+    grid-template: 
+        ". c s ." auto
+        "r X X l" auto
+        "o X X ." auto
+        ". . . ." auto
+    ;
+    justify-content: center;
+}
